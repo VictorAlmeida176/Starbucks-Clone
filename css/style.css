@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "SoDo Sans";
+  src: url("../fonts/SoDoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FONTES */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #33433d;
+}
+
+header {
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: black 1px solid;
+}
+
+header nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav .logo-left {
+  height: 50px;
+  margin-left: 1.7rem;
+  width: 50px;
+  margin-right: 15px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+header nav ul li {
+  margin-right: 9px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+header nav ul a {
+  color: black;
+  text-decoration: none;
+  width: 20rem;
+  font-weight: bold;
+}
+
+header nav ul a:hover {
+  color: #008248;
+}
+
+header nav .historia {
+  height: 100%;
+  width: 100px;
+  margin-left: 20px;
+}
+
+header nav .encontra-loja a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header nav .encontra-loja a img {
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+header nav .botao-entar {
+  height: 100%;
+  margin-left: 20px;
+}
+
+header nav .botao-entar button {
+  height: 25px;
+  width: 70px;
+  border-radius: 20px;
+  color: #000000de;
+  border: 1px solid #000000de;
+  font-family: "Bebas Neue", "cursive";
+  background-color: white;
+  cursor: pointer;
+}
+
+.slide {
+  width: 100vw;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.slides {
+  width: 5000px;
+  display: flex;
+}
+
+.imagens img {
+  width: 100vw;
+  height: 14.2rem;
+  background-color: rgb(47, 8, 119);
+}
+
+#atual {
+  margin-left: -100vw;
+  transition: all 2s;
+}
+
+.btn {
+  position: absolute;
+  color: #33433d;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 0.7rem;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgba(230, 230, 238, 0.438);
+}
+
+#voltar {
+  padding: 6px 12px !important;
+  top: 28%;
+  transform: translateY(-50%);
+
+  left: 1%;
+}
+
+#next {
+  padding: 6px 12px !important;
+  top: 28%;
+  transform: translateY(-50%);
+  right: 1%;
+}
+
+.balls {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1.5rem;
+}
+
+.balls div {
+  transition: all 0.4s;
+  border: 1px solid rgba(228, 224, 224, 0.76);
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.balls div:hover {
+  background-color: rgba(228, 224, 224, 0.76);
+}
+
+.imgAtual {
+  background-color: rgba(228, 224, 224, 0.76);
+  transition: all 0.4s;
+}
+
+.novidades {
+  background-color: #d4e9e2;
+  margin-top: 1.4rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.novidades .filha-novidades {
+  height: 100%;
+  width: 65%;
+  text-align: center;
+}
+
+.novidades .filha-novidades p {
+  margin-top: 5%;
+  color: #1e3932;
+  font-size: 0.9rem;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-bottom: 2.1rem;
+}
+
+.novidades .filha-novidades button {
+  height: 25px;
+  width: 80px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #1e3932;
+  border: 1px solid #000000de;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.voltando-amor {
+  margin-top: 1.4rem;
+  width: 100vw;
+  height: 28rem;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 2;
+}
+
+.voltando-amor .img_left {
+  display: flex;
+  align-items: center;
+  background-color: #d4e9e2;
+}
+
+.voltando-amor .img_left img {
+  width: 26rem;
+  height: 85%;
+}
+
+.voltando-amor .texto_right {
+  grid-column: 2;
+  background-color: #d4e9e2;
+  text-align: center;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
+  color: #1e3932;
+}
+
+.voltando-amor .texto_right h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+.voltando-amor .texto_right p {
+  white-space: pre-line;
+}
+
+.voltando-amor .texto_right .alinhar_texto {
+  width: 17.8rem;
+  height: 100%;
+  padding: 1rem;
+}
+
+.voltando-amor .texto_right .alinhar_texto button {
+  height: 40px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #1e3932;
+  border: 1px solid #000000de;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.gemeas {
+  height: 14rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #d4e9e2;
+  margin-top: 1.4rem;
+  margin-bottom: 40px;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #1e3932;
+  text-align: center;
+}
+
+.gemeas .direita {
+  height: 100%;
+  background-color: #d4e9e2;
+  display: flex;
+  justify-content: center;
+}
+
+.gemeas .esquerda {
+  height: 100%;
+  background-color: #d4e9e2;
+  display: flex;
+  justify-content: center;
+}
+
+.gemeas .direita img {
+  height: 100%;
+  width: 100%;
+}
+
+.gemeas .esquerda img {
+  height: 100%;
+  width: 100%;
+}
+
+.gemeas .mini_container {
+  width: 80%;
+  height: 100%;
+}
+
+.gemeas .mini_container h1 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.gemeas .mini_container p {
+  font-size: 16px;
+}
+
+.gemeas .mini_container button {
+  height: 25px;
+  width: 30%;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #1e3932;
+  border: 1px solid #000000de;
+  font-family: "SoDo Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 500;
+}
