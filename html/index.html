@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/starbucks-nav-logo.svg" type="image/x-icon">
     <title>Starbucks</title>
     <!-- Estilos css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../cssReutilizaveis/style.css">
+    <link rel="stylesheet" href="../cssReutilizaveis/header.css">
+    <link rel="stylesheet" href="../cssInicio/slides.css">
+    <link rel="stylesheet" href="../cssInicio/principal.css">
+    <link rel="stylesheet" href="../cssReutilizaveis/footer.css">
     <!-- fim estilos -->
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Fim fontes -->
 
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
 
     <!-- Icones -->
     <script src="https://kit.fontawesome.com/323bc36a36.js" crossorigin="anonymous"></script>
@@ -27,12 +32,12 @@
     <header>
         <!-- Navegação do site -->
         <nav>
-            <div class="logo-left"> <a href=""><img src="img/starbucks-nav-logo.svg" alt=""></a>  </div>
+            <div class="logo-left"> <a href="index.html"><img src="../img/starbucks-nav-logo.svg" alt=""></a>  </div>
        
             <!-- links  -->
             <ul>
-                <li><a href="">menu</a></li>
-                <li><a href="">rewards</a></li>
+                <li><a href="menu.html" >menu</a></li>
+                <li><a href="rewards.html">rewards</a></li>
                 <li><a href="">nosso café</a></li>
                 <li><a href="">impacto social</a></li>
             </ul>
@@ -40,11 +45,11 @@
        
             
             <div class="historia">
-                <a href=""><img src="img/sb-historias-logo.svg" alt=""></a>
+                <a href=""><img src="../img/sb-historias-logo.svg" alt=""></a>
             </div>
 
             <div class="encontra-loja">
-                <a href=""><img src="img/maps.png" alt="">Encontre uma loja</a>
+                <a href=""><img src="../img/maps.png" alt="">Encontre uma loja</a>
             </div>
 
             <div class="botao-entar">
@@ -61,30 +66,33 @@
     <!-- Area dos slides -->
 
     <div class="slide">
+
+        
         <div class="slides">
             <!-- Botoes passar e voltar -->
-            <div class="btn" id="voltar" >
+            <div class="btn" id="voltar" onclick="proxSlide(-1)">
                 <i class="fas fa-chevron-left"></i>
             </div>
 
-            <div class="btn" id="next" >
+            <div class="btn" id="next" onclick="proxSlide(1)">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <!-- Fim botoes -->
 
             <!-- Imagens carrosel -->
             <div class="imagens" id="atual">
-                <img src="img/banner_2437495195_desktop.jpg" alt="">
+                <img src="../img/banner_2437495195_desktop.jpg" alt="">
             </div>
 
             <div class="imagens">
-                <img src="img/banner_5_desktop.jpg" alt="">
+                <img src="../img/banner_5_desktop.jpg" alt="">
             </div>
             <!-- Fim carrosel -->
         </div>
+        
         <div class="balls">
-            <div class="imgAtual" id="0"></div>
-            <div id="1"></div>
+            <div class="bolas imgAtual" onclick="slideAtual(1)"></div>
+            <div class="bolas" onclick="slideAtual(2)"></div>
         </div>
     </div>
     <!-- Fim area dos slides -->
@@ -101,7 +109,7 @@
     <!-- Imagem do copo e texto a direita -->
     <div class="voltando-amor">
         <div class="img_left">
-            <img src="img/sb-dia-do-fotografo.jpg" alt="">
+            <img src="../img/sb-dia-do-fotografo.jpg" alt="">
         </div>
 
         <div class="texto_right">
@@ -126,13 +134,13 @@
         </div>
 
         <div class="direita">
-            <img src="img/featured-drinks.jpg" alt="">
+            <img src="../img/featured-drinks.jpg" alt="">
         </div>
     </div>
 
     <div class="gemeas">
         <div class="esquerda">
-            <img src="img/donate.jpg" alt="">
+            <img src="../img/donate.jpg" alt="">
         </div>
         <div class="direita">
             <div class="mini_container">
@@ -154,15 +162,83 @@
             </div>
         </div>
         <div class="direita">
-            <img src="img/partners.jpg" alt="">
+            <img src="../img/partners.jpg" alt="">
         </div>
     </div>
     <!-- Fim divs gemeas -->
 
-
     <!-- Fim do corpo da pagina -->
 
+    <!--rodapé da pagina  -->
+    <footer>
+        <!-- div que centraliza as informações -->
+        <div class="info_footer">
+            <div class="colunas">
+                <p>Sobre nós</p>
+                <a href="">Nossa empresa</a>
+                <a href="">Nosso café</a>
+                <a href="">Atendimento ao cliente</a>         
+            </div>
 
+
+            <div class="colunas">  
+                <p>Carreira</p>
+                <a href="">Central de carreiras</a>             
+            </div>
+            
+            <div class="colunas">
+                <p>Impacto Social</p>
+                <a href="">Comunidade</a>
+                <a href="">Meio Ambiente</a>
+                <a href="">Fornecimento ético</a>
+                <a href="">Global Social Impact Report</a>
+                <a href="">Historias Starbucks</a>
+            </div>
+            
+            <div class="colunas">
+                <p>Starbucks Rewards</p>
+                <a href="">Baixe o aplicativo</a>
+                <a href="">Termos e Condições Do Starbucks Card</a>
+                <a href="">Termos e Condições Do Starbucks Rewards</a>
+                <a href="">Termos e Condições De promoções Starbucks</a>
+            </div>
+
+            <div class="colunas">
+                <img src="../img/sb-historias-logo.svg" alt="">
+            </div>
+        </div>
+        <!-- Fim da div  -->
+        <hr>
+
+        <div class="redes_termos_footer">
+            <div class="redes">
+                <a href=""><img src="../img/icon-spotify.svg" alt=""></a>
+                <a href=""><img src="../img/icon-facebook.svg" alt=""></a>
+                <a href=""><img src="../img/icon-linkedin.svg" alt=""></a>
+                <a href=""><img src="../img/icon-instagram.svg" alt=""></a>
+                <a href=""><img src="../img/icon-youtube.svg" alt=""></a>
+                <a href=""><img src="../img/icon-twitter.svg" alt=""></a>
+            </div>
+
+            <div class="termos">
+                <ul>
+                    <a href=""><li>Política de privacidade</li></a>
+                    <li>|</li>
+                    <a href=""><li>Política de troca de produto</li></a>
+                    <li>|</li>
+                    <a href=""><li>Termos de uso</li></a>
+                    <li>|</li>
+                    <a href=""><li>Política de Cookies</li></a>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>© 2021 Starbucks Coffee Company. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Fim do rodapé -->
 
 
 </body>

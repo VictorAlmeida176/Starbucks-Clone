@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #33433d;
+}

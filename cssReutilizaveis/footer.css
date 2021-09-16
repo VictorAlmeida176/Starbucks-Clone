@@ -1,0 +1,98 @@
+footer {
+  width: 100vw;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7), 0 2px 8px 0 rgba(0, 0, 0, 0.5),
+    0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer .info_footer {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .info_footer .colunas {
+  height: 20rem;
+  margin-left: 5px;
+  width: 9rem;
+}
+footer .info_footer .colunas a {
+  color: rgba(0, 0, 0, 0.56);
+  text-decoration: none;
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
+footer .info_footer .colunas a:hover {
+  color: rgb(117, 114, 114);
+}
+
+footer .info_footer .colunas p {
+  color: #32312d;
+  margin: 2rem 0rem 1rem 0rem;
+  font-size: 17px;
+}
+
+footer .info_footer .colunas img {
+  margin: 2rem 0rem 1rem 1rem;
+  height: 2.5rem;
+}
+
+hr {
+  background-color: rgba(233, 233, 233, 0.753);
+  width: 85vw;
+  margin: 0 auto;
+}
+
+footer .redes_termos_footer {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+footer .redes_termos_footer .redes {
+  margin-top: 4rem;
+  width: 40vw;
+  height: 2rem;
+}
+
+footer .redes_termos_footer .redes a img {
+  padding-left: 10px;
+  height: 1.7rem;
+}
+
+footer .redes_termos_footer .redes a img:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+footer .redes_termos_footer .termos {
+  margin-top: 2rem;
+  width: 80vw;
+  height: 20px;
+}
+
+footer .redes_termos_footer .termos ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .redes_termos_footer .termos ul li {
+  margin-left: 10px;
+}
+
+footer .redes_termos_footer .termos ul a {
+  text-decoration: none;
+  color: #32312d;
+}
+
+footer .redes_termos_footer .termos ul a:hover {
+  color: rgb(145, 145, 145);
+}
+
+footer .redes_termos_footer .copyright p {
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.56);
+  padding-bottom: 5rem;
+}

@@ -1,0 +1,73 @@
+.container_menu {
+  height: 20rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.container_menu .imgEsquerda {
+  width: 57%;
+}
+
+.container_menu .imgEsquerda img {
+  height: 18rem;
+  width: 100%;
+}
+
+.container_menu .infoDireita {
+  width: 43%;
+  height: 100%;
+  background-color: #f2efed;
+  text-align: center;
+  color: #008248;
+}
+
+.container_menu .infoDireita .divisor {
+  height: 0.3rem;
+  width: 3rem;
+  background-color: #004f34;
+  position: absolute;
+  right: 321px;
+  top: 45%;
+}
+
+.container_menu .infoDireita h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.container_menu .infoDireita a {
+  text-decoration: none;
+  color: #008248;
+  font-size: 1rem;
+}
+
+.container_menu .infoDireita p {
+  font-size: 0.6rem;
+  margin-top: 20px;
+  color: #1e3932;
+  margin-bottom: 20px;
+}
+
+.container_menu .infoDireita .tabela {
+  width: 60%;
+  height: 3rem;
+  margin: auto;
+}
+
+.container_menu .infoDireita .tabela ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.container_menu .infoDireita .tabela li a {
+  font-size: 0.8rem;
+}
+
+.container_menu .infoDireita span a {
+  font-size: 0.8rem;
+}
